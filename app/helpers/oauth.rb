@@ -18,5 +18,6 @@ def request_token
       :oauth_callback => "http://#{host_and_port}/auth"
     )
   end
+
   session[:request_token]
 end
