@@ -1,9 +1,15 @@
+body {
+	background-color: rgb(164,205,251);
+}
 .container {
+	position: relative;
+	top: -45px;
   margin: 20px auto;
   width: 600px;
   padding: 20px 20px 20px 20px;
   border: 1px dotted black;
   border-radius: 5px;
+  background-color: rgb(202,204,206) ;
 }
 
 button a {
@@ -50,4 +56,33 @@ font-weight: bold;
 }
 img{
 	border-radius: 9px;
+}
+
+.tweet_form {
+	position: relative;
+	top: -30px;
+  margin: 20px auto;
+  width: 350px;
+  padding: 20px 20px 20px 20px;
+  border: 1px dotted black;
+  border-radius: 5px;
+  background-color: rgb(202,204,206) ;
+}
+
+input {
+	width: 25%;
+	text-align: center;
+}
+
+#tweet_submit {
+	text-align: center;
+}
+
+#tweet_submit_button {
+	border-radius: 4px;
+}
+
+#tweet_textarea {
+	border-radius: 5px;
+	margin: 10px auto;
 }
