@@ -12,12 +12,15 @@ class User < ActiveRecord::Base
 
 	def fetch_tweets!
     options = {}
-    if last_tweet = self.tweets.order('created_at DESC').first
+    if last_tweet = self.tweets.order('twitter_id DESC').first
       options[:since_id] = last_tweet.twitter_id
     end
 
     timeline = twitter_client.user_timeline(self.username, options)
     timeline.each do |tweet|
+
+    	profile_image_url = tweet.user.profile_image_url
+    	self.update_attributes(:profile_image_url => profile_image_url)
       self.tweets.create(:text => tweet[:text], :twitter_id => tweet[:id])
     end
   end
