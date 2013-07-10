@@ -18,6 +18,16 @@
   <title></title>
 </head>
 <body>
+  <% if current_user %>
+  <div>
+    <p>
+      <button><a href="/sign_out">Sign Out</a></button><br>
+      <button><a href="/tweet">Tweet!</a></button><br>
+    </p>
+  </div>
+  <% else %>
+  <button><a href="/sign_in">Sign In with Twitter</a></button>
+  <% end %> 
   <%= yield %>
 </body>
 </html>

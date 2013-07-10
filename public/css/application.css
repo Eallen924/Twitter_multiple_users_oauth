@@ -1,11 +1,53 @@
 .container {
   margin: 20px auto;
   width: 600px;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   border: 1px dotted black;
+  border-radius: 5px;
 }
 
 button a {
   text-decoration: none;
   color: black;
+}
+
+.tweet_container {
+	margin: 20px auto;
+	width: 500px;
+	height: 80px;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgb(234,231,231);
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+
+#tweet_pic {
+	postion:relative;
+	float: left;
+	margin-top: 0 auto;
+	border: 1 px solid black;
+
+}
+
+#tweet_username{
+	position: relative;
+	display: inline;
+	margin-top: -4px;
+padding-left: 10px;
+font-style: italic;
+font-weight: bold;
+}
+#tweet_body {
+	position: relative;
+	margin-left: 59px;
+	height: 66px;
+	width: 440px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+img{
+	border-radius: 9px;
 }
